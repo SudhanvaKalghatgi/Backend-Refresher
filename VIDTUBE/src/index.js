@@ -7,7 +7,7 @@ dotenv.config({
 });
 
 const PORT = process.env.PORT || 8001;
-console.log("MONGODB_URI =", process.env.MONGODB_URI);
+
 connectDB()
   .then(() => {
     app.listen(PORT, () => {
